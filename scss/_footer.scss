@@ -1,0 +1,18 @@
+.div_footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer {
+  display: flex;
+  justify-content:$CenterZone;
+  align-items: $CenterZone;
+  align-content: space-between;
+  color: $colorFooter;
+}
+
+p {
+  text-align: $CenterZone;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
