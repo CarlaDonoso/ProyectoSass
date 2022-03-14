@@ -1,0 +1,11 @@
+.article_contacto {
+  display: flex;
+  flex-direction: column;
+  .div_formulario {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    justify-items: center;
+  }
+}

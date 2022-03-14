@@ -1,0 +1,14 @@
+.div_skills {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  margin-top: 50px;
+  .skills img {
+    cursor: pointer;
+    transition: transform 0.5s ease;
+
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+}

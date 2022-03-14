@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(https://www.wallpapertip.com/wmimgs/83-838410_php-html-code-php-lenguaje-de-programacion.jpg);
+  font-family: verdana;
+  color: aliceblue;
+  backdrop-filter: blur(5px);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body h3 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+body p {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.borde {
+  border-radius: 30%;
+}
+
+.about {
+  animation-name: aparecer;
+  animation-duration: 3.5s;
+}
+
+@media (max-width: 420px) {
+  .section_proyectos--grid {
+    grid-template-columns: 1fr;
+  }
+
+  .article_skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-items: center;
+  }
+}
+@media (max-width: 690px) {
+  ul {
+    text-align: center;
+  }
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 25px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: ghostwhite;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  color: orange;
+}
+footer p {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+footer a {
+  cursor: pointer;
+}
+footer .div_footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.principal {
+  color: orange;
+}
+
+.secundario {
+  color: aliceblue;
+}
+
+.terciario {
+  color: ghostwhite;
+}
+
+.article_contacto {
+  display: flex;
+  flex-direction: column;
+}
+.article_contacto .div_formulario {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+  justify-items: center;
+}
+
+.div_skills {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.div_skills .skills img {
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+.div_skills .skills img:hover {
+  transform: scale(1.3);
+}
+
+.div_sobremi {
+  display: grid;
+  justify-items: center;
+  margin-top: 50px;
+}
+
+.section_home {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  gap: 15px;
+  justify-items: center;
+  margin-top: 30px;
+  color: ghostwhite;
+  animation-name: aparecer;
+  animation-duration: 3.5s;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,18 @@
+@mixin textos {
+    font-family: Verdana;
+    font-size: 20px;
+    text-align: center;
+}
+
+.TextosConEstilo {
+    @include textos;
+}
+
+@mixin TextoConParametros($CenterText,$MT) {
+    font-size: $MT *2;
+    text-align: $CenterText;
+}
+
+.TextoAlternativo {
+    @include TextoConParametros(40px,center);
+}

@@ -1,0 +1,7 @@
+$mapColors:(principal: orange,secundario:aliceblue,terciario:ghostwhite);
+
+@each $i, $color in $mapColors {
+    .#{$i} {
+        color: $color;
+    }
+}

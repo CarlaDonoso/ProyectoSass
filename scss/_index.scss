@@ -1,0 +1,11 @@
+.section_home {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  gap: 15px;
+  justify-items: center;
+  margin-top: $MT + 10px;
+  color: $ColorSecondary;
+  animation-name: aparecer;
+  animation-duration: 3.5s;
+}

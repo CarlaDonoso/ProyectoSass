@@ -1,0 +1,12 @@
+.EncabezadoPrincipal {
+    font-family: sans-serif;
+    text-align: right;
+    color: orange;
+    margin-top: $MT
+}
+
+.EncabezadoSecundario {
+    @extend .EncabezadoPrincipal;
+    font-size: 35px;
+    border-radius: 20%;
+}

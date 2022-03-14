@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(https://www.wallpapertip.com/wmimgs/83-838410_php-html-code-php-lenguaje-de-programacion.jpg);
+  font-family: $MainTypography;
+  color: $ColorTertiary;
+  backdrop-filter: blur(5px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  h3 {
+    text-align: $CenterText;
+    margin-top: $MT + 20px;
+    margin-bottom: $MT + 20px;
+  }
+    p {
+      text-align: $CenterText;
+      margin-top: $MT;
+      margin-bottom: $MT - 10px;
+    }
+  
+}
+
+.borde {
+  border-radius: 30%;
+}
+.about {
+  animation-name: aparecer;
+  animation-duration: 3.5s;
+}
+
+
+@media (max-width: 420px) {
+  .section_proyectos--grid {
+    grid-template-columns: 1fr;
+  }
+
+  .article_skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 690px) {
+  ul {
+    text-align: center;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
