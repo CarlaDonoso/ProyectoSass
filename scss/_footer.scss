@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 footer {
   display: flex;
   justify-content: center;
@@ -21,4 +22,23 @@ footer {
     display: flex;
     justify-content: space-evenly;
   }
+=======
+.div_footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer {
+  display: flex;
+  justify-content:$CenterZone;
+  align-items: $CenterZone;
+  align-content: space-between;
+  color: $colorFooter;
+}
+
+p {
+  text-align: $CenterZone;
+  margin-top: 20px;
+  margin-bottom: 10px;
+>>>>>>> f7aead53b98c8ff8a9cedaf5df95c0b5aeff92c7
 }
