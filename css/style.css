@@ -6,26 +6,16 @@
 body {
   background-image: url(https://www.wallpapertip.com/wmimgs/83-838410_php-html-code-php-lenguaje-de-programacion.jpg);
   font-family: verdana;
-<<<<<<< HEAD
   color: aliceblue;
-=======
-  color: ghostwhite;
->>>>>>> f7aead53b98c8ff8a9cedaf5df95c0b5aeff92c7
   backdrop-filter: blur(5px);
   background-repeat: no-repeat;
   background-size: cover;
 }
-<<<<<<< HEAD
 body h3 {
-=======
-
-h3 {
->>>>>>> f7aead53b98c8ff8a9cedaf5df95c0b5aeff92c7
   text-align: center;
   margin-top: 40px;
   margin-bottom: 40px;
 }
-<<<<<<< HEAD
 body p {
   text-align: center;
   margin-top: 20px;
@@ -195,12 +185,22 @@ footer .div_footer {
   transform: scale(1.3);
 }
 
-.Progress, .ProgressCinco, .ProgressCuatro, .ProgressTres, .ProgressDos, .ProgressUno {
+.Progress,
+.ProgressCinco,
+.ProgressCuatro,
+.ProgressTres,
+.ProgressDos,
+.ProgressUno {
   width: 50px;
   background-color: orange;
   transition: height 1s ease;
 }
-.Progress:hover, .ProgressCinco:hover, .ProgressCuatro:hover, .ProgressTres:hover, .ProgressDos:hover, .ProgressUno:hover {
+.Progress:hover,
+.ProgressCinco:hover,
+.ProgressCuatro:hover,
+.ProgressTres:hover,
+.ProgressDos:hover,
+.ProgressUno:hover {
   width: 50px;
   transition: 1s;
 }
@@ -258,8 +258,6 @@ footer .div_footer {
   background-color: ghostwhite;
   border-radius: 10px;
 }
-=======
->>>>>>> f7aead53b98c8ff8a9cedaf5df95c0b5aeff92c7
 
 .section_home {
   display: grid;
@@ -269,21 +267,10 @@ footer .div_footer {
   justify-items: center;
   margin-top: 30px;
   color: ghostwhite;
-<<<<<<< HEAD
-=======
-}
-
-.borde {
-  border-radius: 30%;
-}
-
-.section_home {
->>>>>>> f7aead53b98c8ff8a9cedaf5df95c0b5aeff92c7
   animation-name: aparecer;
   animation-duration: 3.5s;
 }
 
-<<<<<<< HEAD
 article h4 {
   text-align: center;
 }
@@ -334,57 +321,25 @@ article h4 div p {
   transform: scale(1.1);
 }
 
-.Progress, .ProgressCinco, .ProgressCuatro, .ProgressTres, .ProgressDos, .ProgressUno {
+.Progress,
+.ProgressCinco,
+.ProgressCuatro,
+.ProgressTres,
+.ProgressDos,
+.ProgressUno {
   width: 0px;
   background-color: orange;
   transition: width 1s;
 }
 
-.Efecto, .Efecto_intereses, .Efecto_sobremi {
+.Efecto,
+.Efecto_intereses,
+.Efecto_sobremi {
   text-decoration: none;
   font-size: 15px;
   color: ghostwhite;
   border-bottom: 2px solid transparent;
   transition: 0.3s all ease;
-=======
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-nav ul li {
-  padding-block-start: 15px;
-  list-style-type: none;
-  display: inline-block;
-  margin: 0 25px;
-}
-nav ul li a {
-  text-decoration: none;
-  font-size: 20px;
-  color: ghostwhite;
-}
-
-.div_footer {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: space-between;
-  color: orange;
-}
-
-p {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 10px;
->>>>>>> f7aead53b98c8ff8a9cedaf5df95c0b5aeff92c7
 }
 
 /*# sourceMappingURL=style.css.map */
