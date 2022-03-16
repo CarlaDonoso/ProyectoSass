@@ -57,10 +57,13 @@ h5 {
 
   .Proyecto {
     display: flex;
-    flex-direction: column;
-    margin-left: $MT * 3;
+    justify-items: center;
+    
+    
   }
-  .imgRedonda{
+  .imgProyecto{
+    display: flex;
+    flex-direction: column;
     margin-top: $MT;
   }
 }

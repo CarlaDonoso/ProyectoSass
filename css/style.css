@@ -59,11 +59,12 @@ h5 {
 
   .Proyecto {
     display: flex;
-    flex-direction: column;
-    margin-left: 60px;
+    justify-items: center;
   }
 
-  .imgRedonda {
+  .imgProyecto {
+    display: flex;
+    flex-direction: column;
     margin-top: 20px;
   }
 }
@@ -185,22 +186,12 @@ footer .div_footer {
   transform: scale(1.3);
 }
 
-.Progress,
-.ProgressCinco,
-.ProgressCuatro,
-.ProgressTres,
-.ProgressDos,
-.ProgressUno {
+.Progress, .ProgressCinco, .ProgressCuatro, .ProgressTres, .ProgressDos, .ProgressUno {
   width: 50px;
   background-color: orange;
   transition: height 1s ease;
 }
-.Progress:hover,
-.ProgressCinco:hover,
-.ProgressCuatro:hover,
-.ProgressTres:hover,
-.ProgressDos:hover,
-.ProgressUno:hover {
+.Progress:hover, .ProgressCinco:hover, .ProgressCuatro:hover, .ProgressTres:hover, .ProgressDos:hover, .ProgressUno:hover {
   width: 50px;
   transition: 1s;
 }
@@ -311,30 +302,20 @@ article h4 div p {
   justify-content: space-around;
 }
 
-.imgRedonda {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
+.imgProyecto {
   transition: transform 0.5s ease;
 }
-.imgRedonda:hover {
+.imgProyecto:hover {
   transform: scale(1.1);
 }
 
-.Progress,
-.ProgressCinco,
-.ProgressCuatro,
-.ProgressTres,
-.ProgressDos,
-.ProgressUno {
+.Progress, .ProgressCinco, .ProgressCuatro, .ProgressTres, .ProgressDos, .ProgressUno {
   width: 0px;
   background-color: orange;
   transition: width 1s;
 }
 
-.Efecto,
-.Efecto_intereses,
-.Efecto_sobremi {
+.Efecto, .Efecto_intereses, .Efecto_sobremi {
   text-decoration: none;
   font-size: 15px;
   color: ghostwhite;
