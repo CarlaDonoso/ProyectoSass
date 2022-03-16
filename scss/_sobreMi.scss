@@ -1,5 +1,30 @@
 .div_sobremi {
-  display: grid;
-  justify-items: center;
-  margin-top: 50px;
+  display: flex;
+  justify-items:flex-end;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: $MT;
 }
+
+.Intereses{
+  display: grid;
+  grid-row: 2;
+  justify-items: center;
+  text-decoration: none;
+}
+
+.Efecto_sobremi {
+  &:hover{
+    color:$ColorPrimary;
+    border-bottom: 1px solid $ColorPrimary;
+    padding-bottom: 1px;
+  }
+  }
+
+  .Efecto_intereses{
+    margin-left: $MT;
+    &:hover{
+      background-color: $ColorSecondary;
+      border-radius: 10px;
+    }
+  }

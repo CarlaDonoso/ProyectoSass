@@ -9,10 +9,10 @@
 }
 
 @mixin TextoConParametros($CenterText,$MT) {
-    font-size: $MT *2;
+    font-size: $MT;
     text-align: $CenterText;
 }
 
 .TextoAlternativo {
-    @include TextoConParametros(40px,center);
+    @include TextoConParametros($MT,$CenterText);
 }

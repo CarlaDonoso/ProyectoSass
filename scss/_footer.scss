@@ -11,6 +11,11 @@ footer {
   }
   a {
     cursor: pointer;
+    transition: transform 0.5s ease;
+
+    &:hover {
+      transform: scale(1.3);
+    }
     }
   .div_footer {
     display: flex;

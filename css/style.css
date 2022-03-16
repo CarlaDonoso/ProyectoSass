@@ -31,6 +31,10 @@ body p {
   animation-duration: 3.5s;
 }
 
+h5 {
+  margin-top: 10px;
+}
+
 @media (max-width: 420px) {
   .section_proyectos--grid {
     grid-template-columns: 1fr;
@@ -43,9 +47,44 @@ body p {
     gap: 20px;
     justify-items: center;
   }
+
+  .floating {
+    display: flex;
+    justify-items: center;
+  }
+
+  footer h5 {
+    display: none;
+  }
+
+  .Proyecto {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+  }
+
+  .imgRedonda {
+    margin-top: 20px;
+  }
 }
 @media (max-width: 690px) {
   ul {
+    text-align: center;
+  }
+
+  .floating {
+    display: flex;
+    justify-items: center;
+  }
+}
+@media (max-width: 1400px) {
+  ul {
+    text-align: center;
+  }
+
+  .floating {
+    display: flex;
+    justify-content: center;
     text-align: center;
   }
 }
@@ -66,6 +105,13 @@ nav ul li a {
   text-decoration: none;
   font-size: 20px;
   color: ghostwhite;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s all ease;
+}
+nav ul li a:hover {
+  color: orange;
+  border-bottom: 2px solid orange;
+  padding-bottom: 3px;
 }
 
 footer {
@@ -82,6 +128,10 @@ footer p {
 }
 footer a {
   cursor: pointer;
+  transition: transform 0.5s ease;
+}
+footer a:hover {
+  transform: scale(1.3);
 }
 footer .div_footer {
   display: flex;
@@ -114,9 +164,18 @@ footer .div_footer {
 
 .div_skills {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  margin-top: 50px;
+  justify-content: center;
+}
+.div_skills .article_skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  justify-items: center;
+}
+.div_skills .article_skills p {
+  border-radius: 50px;
+  margin-top: 10px;
 }
 .div_skills .skills img {
   cursor: pointer;
@@ -126,10 +185,68 @@ footer .div_footer {
   transform: scale(1.3);
 }
 
+.Progress, .ProgressCinco, .ProgressCuatro, .ProgressTres, .ProgressDos, .ProgressUno {
+  width: 50px;
+  background-color: orange;
+  transition: height 1s ease;
+}
+.Progress:hover, .ProgressCinco:hover, .ProgressCuatro:hover, .ProgressTres:hover, .ProgressDos:hover, .ProgressUno:hover {
+  width: 50px;
+  transition: 1s;
+}
+
+.ProgressUno:hover {
+  width: 100px;
+  transition: 1s;
+}
+
+.ProgressDos:hover {
+  width: 50px;
+  transition: 1s;
+}
+
+.ProgressTres:hover {
+  width: 10px;
+  transition: 1s;
+}
+
+.ProgressCuatro:hover {
+  width: 25px;
+  transition: 1s;
+}
+
+.ProgressCinco:hover {
+  width: 30px;
+  transition: 1s;
+}
+
 .div_sobremi {
+  display: flex;
+  justify-items: flex-end;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.Intereses {
   display: grid;
+  grid-row: 2;
   justify-items: center;
-  margin-top: 50px;
+  text-decoration: none;
+}
+
+.Efecto_sobremi:hover {
+  color: orange;
+  border-bottom: 1px solid orange;
+  padding-bottom: 1px;
+}
+
+.Efecto_intereses {
+  margin-left: 20px;
+}
+.Efecto_intereses:hover {
+  background-color: ghostwhite;
+  border-radius: 10px;
 }
 
 .section_home {
@@ -142,6 +259,70 @@ footer .div_footer {
   color: ghostwhite;
   animation-name: aparecer;
   animation-duration: 3.5s;
+}
+
+article h4 {
+  text-align: center;
+}
+article h4 div p {
+  display: block;
+  align-items: center;
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-bottom: 20px;
+}
+.floating .bordeIndex {
+  border: 2px solid orange;
+  border-radius: 20px;
+}
+.floating .bordeIndex:hover {
+  background-color: orange;
+  transition: 1s;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+.Proyecto {
+  display: flex;
+  justify-content: space-around;
+}
+
+.imgRedonda {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  transition: transform 0.5s ease;
+}
+.imgRedonda:hover {
+  transform: scale(1.1);
+}
+
+.Progress, .ProgressCinco, .ProgressCuatro, .ProgressTres, .ProgressDos, .ProgressUno {
+  width: 0px;
+  background-color: orange;
+  transition: width 1s;
+}
+
+.Efecto, .Efecto_intereses, .Efecto_sobremi {
+  text-decoration: none;
+  font-size: 15px;
+  color: ghostwhite;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s all ease;
 }
 
 /*# sourceMappingURL=style.css.map */

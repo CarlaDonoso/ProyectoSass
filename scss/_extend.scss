@@ -1,12 +1,41 @@
-.EncabezadoPrincipal {
-    font-family: sans-serif;
-    text-align: right;
-    color: orange;
-    margin-top: $MT
+.Progress {
+    width: 0px;
+    background-color: orange;
+    transition: width 1s;        
 }
 
-.EncabezadoSecundario {
-    @extend .EncabezadoPrincipal;
-    font-size: 35px;
-    border-radius: 20%;
+.ProgressUno {
+    @extend .Progress;
+}
+
+.ProgressDos{
+    @extend .Progress;
+}
+
+.ProgressTres{
+    @extend .Progress;
+}
+
+.ProgressCuatro{
+@extend .Progress;
+}
+
+.ProgressCinco{
+    @extend .Progress;
+}
+
+.Efecto{
+    text-decoration: none;
+  font-size: 15px;
+  color: $ColorSecondary;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s all ease;
+}
+
+.Efecto_sobremi{
+    @extend .Efecto;
+}
+
+.Efecto_intereses{
+    @extend .Efecto
 }

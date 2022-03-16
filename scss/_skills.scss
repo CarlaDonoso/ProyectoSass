@@ -1,14 +1,67 @@
 .div_skills {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  margin-top: 50px;
+    justify-content: center;
+    .article_skills{
+      display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-items: center;
+      p{
+        border-radius: 50px;
+        margin-top: 10px;
+      }
+    }
   .skills img {
     cursor: pointer;
     transition: transform 0.5s ease;
-
     &:hover {
       transform: scale(1.3);
     }
+  }
+}
+
+.Progress{
+  width: 50px;
+    background-color: orange;
+    transition: height 1s ease;
+    &:hover {
+      width: 50px;
+      transition: 1s;
+    }
+}
+
+.ProgressUno{
+  &:hover{
+    width: 100px;
+    transition: 1s;
+  }
+}
+
+.ProgressDos{
+  &:hover{
+    width: 50px;
+    transition: 1s;
+  }
+}
+
+.ProgressTres{
+  &:hover{
+    width: 10px;
+    transition: 1s;
+  }
+}
+
+.ProgressCuatro{
+  &:hover{
+    width: 25px;
+    transition: 1s;
+  }
+}
+
+.ProgressCinco{
+  &:hover{
+    width: 30px;
+    transition: 1s;
   }
 }

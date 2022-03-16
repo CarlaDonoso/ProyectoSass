@@ -9,3 +9,37 @@
   animation-name: aparecer;
   animation-duration: 3.5s;
 }
+
+article{
+  h4{
+    text-align: $CenterText;
+    div{
+    p{
+      display: block;
+      align-items: center;
+      }
+      }
+    }
+  }
+
+.floating { 
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-bottom: 20px;
+  .bordeIndex{
+    border: 2px solid orange;
+    border-radius: 20px;
+    &:hover{
+      background-color: orange;
+      transition: 1s;
+      }
+    }
+ }
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 10px); }
+  100%   { transform: translate(0, -0px); }   
+}

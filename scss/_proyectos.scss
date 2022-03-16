@@ -1,0 +1,15 @@
+.Proyecto {
+  display: flex;
+  justify-content: space-around;
+}
+
+.imgRedonda {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  transition: transform 0.5s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

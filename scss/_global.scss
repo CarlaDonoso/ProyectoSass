@@ -15,12 +15,11 @@ body {
     margin-top: $MT + 20px;
     margin-bottom: $MT + 20px;
   }
-    p {
-      text-align: $CenterText;
-      margin-top: $MT;
-      margin-bottom: $MT - 10px;
-    }
-  
+  p {
+    text-align: $CenterText;
+    margin-top: $MT;
+    margin-bottom: $MT - 10px;
+  }
 }
 
 .borde {
@@ -31,6 +30,9 @@ body {
   animation-duration: 3.5s;
 }
 
+h5 {
+  margin-top: $MT - 10px;
+}
 
 @media (max-width: 420px) {
   .section_proyectos--grid {
@@ -44,10 +46,42 @@ body {
     gap: 20px;
     justify-items: center;
   }
+
+  .floating {
+    display: flex;
+    justify-items: center;
+  }
+  footer h5 {
+    display: none;
+  }
+
+  .Proyecto {
+    display: flex;
+    flex-direction: column;
+    margin-left: $MT * 3;
+  }
+  .imgRedonda{
+    margin-top: $MT;
+  }
 }
 
 @media (max-width: 690px) {
   ul {
+    text-align: center;
+  }
+  .floating {
+    display: flex;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 1400px) {
+  ul {
+    text-align: center;
+  }
+  .floating {
+    display: flex;
+    justify-content: center;
     text-align: center;
   }
 }
