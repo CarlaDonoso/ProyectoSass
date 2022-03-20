@@ -127,7 +127,6 @@ footer {
   align-items: center;
   align-content: space-between;
   color: orange;
-  height: 100vh;
 }
 footer p {
   text-align: center;
@@ -146,6 +145,21 @@ footer .div_footer {
   justify-content: space-evenly;
 }
 
+@media (max-width: 375px) and (min-width: 480px) {
+  footer {
+    height: 100vh;
+  }
+}
+@media (min-width: 690px) {
+  footer {
+    height: 100vh;
+  }
+}
+@media (min-width: 3840px) {
+  footer {
+    height: 100vh;
+  }
+}
 .principal {
   color: orange;
 }
