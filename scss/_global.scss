@@ -34,19 +34,26 @@ h5 {
   margin-top: $MT - 10px;
 }
 
-@media (max-width: 420px) {
-  .section_proyectos--grid {
-    grid-template-columns: 1fr;
-  }
+.section_home {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  gap: 15px;
+  justify-items: center;
+  margin-top: 30px;
+  color: $ColorPrimary;
+}
 
-  .article_skills {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    gap: 20px;
-    justify-items: center;
-  }
+.borde {
+  border-radius: 30%;
+}
 
+.section_home {
+  animation-name: aparecer;
+  animation-duration: 3.5s;
+}
+
+@media (max-width: 375px) {
   .floating {
     display: flex;
     justify-items: center;
@@ -55,17 +62,6 @@ h5 {
     display: none;
   }
 
-  .Proyecto {
-    display: flex;
-    justify-items: center;
-    
-    
-  }
-  .imgProyecto{
-    display: flex;
-    flex-direction: column;
-    margin-top: $MT;
-  }
 }
 
 @media (max-width: 690px) {
@@ -78,7 +74,7 @@ h5 {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 3840px) {
   ul {
     text-align: center;
   }
@@ -86,14 +82,16 @@ h5 {
     display: flex;
     justify-content: center;
     text-align: center;
+    width: 100%;
   }
-}
+} 
+
+
 
 @keyframes aparecer {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }

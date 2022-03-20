@@ -35,19 +35,26 @@ h5 {
   margin-top: 10px;
 }
 
-@media (max-width: 420px) {
-  .section_proyectos--grid {
-    grid-template-columns: 1fr;
-  }
+.section_home {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  gap: 15px;
+  justify-items: center;
+  margin-top: 30px;
+  color: orange;
+}
 
-  .article_skills {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    gap: 20px;
-    justify-items: center;
-  }
+.borde {
+  border-radius: 30%;
+}
 
+.section_home {
+  animation-name: aparecer;
+  animation-duration: 3.5s;
+}
+
+@media (max-width: 375px) {
   .floating {
     display: flex;
     justify-items: center;
@@ -55,17 +62,6 @@ h5 {
 
   footer h5 {
     display: none;
-  }
-
-  .Proyecto {
-    display: flex;
-    justify-items: center;
-  }
-
-  .imgProyecto {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
   }
 }
 @media (max-width: 690px) {
@@ -78,7 +74,7 @@ h5 {
     justify-items: center;
   }
 }
-@media (max-width: 1400px) {
+@media (max-width: 3840px) {
   ul {
     text-align: center;
   }
@@ -87,6 +83,7 @@ h5 {
     display: flex;
     justify-content: center;
     text-align: center;
+    width: 100%;
   }
 }
 @keyframes aparecer {
@@ -115,12 +112,22 @@ nav ul li a:hover {
   padding-bottom: 3px;
 }
 
+header nav a {
+  text-decoration: none;
+  color: aliceblue;
+  transition: 0.2s all ease;
+}
+header nav a:hover {
+  color: orange;
+}
+
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: space-between;
   color: orange;
+  height: 100vh;
 }
 footer p {
   text-align: center;
@@ -221,9 +228,19 @@ footer .div_footer {
   transition: 1s;
 }
 
+@media (max-width: 420px) {
+  .article_skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-items: center;
+  }
+}
 .div_sobremi {
   display: flex;
-  justify-items: flex-end;
+  align-content: space-around;
+  justify-items: center;
   margin-top: 10px;
   margin-right: 20px;
   margin-left: 20px;
@@ -234,6 +251,7 @@ footer .div_footer {
   grid-row: 2;
   justify-items: center;
   text-decoration: none;
+  margin-top: 20px;
 }
 
 .Efecto_sobremi:hover {
@@ -244,12 +262,96 @@ footer .div_footer {
 
 .Efecto_intereses {
   margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
 }
 .Efecto_intereses:hover {
   background-color: ghostwhite;
   border-radius: 10px;
 }
+.Efecto_intereses .TextosConEstilo {
+  text-align: center;
+}
+.Efecto_intereses .TextoAlternativo {
+  text-align: center;
+}
 
+@media (max-width: 375px) and (min-width: 480px) {
+  .borde {
+    display: none;
+  }
+
+  .div_sobremi {
+    display: flex;
+    align-items: center;
+  }
+  .div_sobremi .TextoAlternativo {
+    font-size: small;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: small;
+    color: orange;
+  }
+
+  a.Efecto_sobremi {
+    font-size: small;
+  }
+
+  .TextosConEstilo {
+    font-size: small;
+    text-align: center;
+  }
+}
+@media (min-width: 690px) {
+  .div_sobremi {
+    display: flex;
+    align-items: center;
+  }
+  .div_sobremi .TextoAlternativo {
+    font-size: medium;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: medium;
+    color: orange;
+  }
+
+  a.Efecto_sobremi {
+    font-size: medium;
+  }
+
+  .TextosConEstilo {
+    font-size: medium;
+    text-align: center;
+  }
+}
+@media (min-width: 3840px) {
+  h3 {
+    font-size: xx-large;
+    color: orange;
+  }
+
+  a.Efecto_sobremi {
+    font-size: xx-large;
+  }
+
+  .TextosConEstilo {
+    font-size: xx-large;
+    text-align: center;
+  }
+
+  .div_sobremi {
+    display: flex;
+    justify-content: space-around;
+  }
+  .div_sobremi .TextoAlternativo {
+    font-size: xx-large;
+    text-align: center;
+  }
+}
 .section_home {
   display: grid;
   grid-template-columns: auto;
@@ -262,10 +364,14 @@ footer .div_footer {
   animation-duration: 3.5s;
 }
 
-article h4 {
+body .bordeIndex {
+  border: 2px solid orange;
+  border-radius: 20px;
+}
+body article h4 {
   text-align: center;
 }
-article h4 div p {
+body article h4 div p {
   display: block;
   align-items: center;
 }
@@ -298,8 +404,10 @@ article h4 div p {
   }
 }
 .Proyecto {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-row: 1;
+  justify-items: center;
+  text-align: center;
 }
 
 .imgProyecto {
@@ -309,6 +417,50 @@ article h4 div p {
   transform: scale(1.1);
 }
 
+body section h5 {
+  color: orange;
+}
+
+@media (min-width: 375px) {
+  .Proyecto {
+    display: flex;
+    justify-items: center;
+    font-size: small;
+  }
+
+  .imgProyecto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 690px) {
+  .Proyecto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-items: center;
+    font-size: medium;
+  }
+}
+@media (max-width: 3840px) {
+  .Proyecto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-items: center;
+    font-size: xx-large;
+  }
+
+  /*h5{
+    font-size: $TextoGde;
+  }
+  p{
+    font-size: $TextoGde;
+  }*/
+}
 .Progress, .ProgressCinco, .ProgressCuatro, .ProgressTres, .ProgressDos, .ProgressUno {
   width: 0px;
   background-color: orange;

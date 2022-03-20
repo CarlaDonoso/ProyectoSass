@@ -9,7 +9,11 @@
   animation-name: aparecer;
   animation-duration: 3.5s;
 }
-
+body{
+  .bordeIndex{
+    border: 2px solid orange;
+    border-radius: 20px;
+  }
 article{
   h4{
     text-align: $CenterText;
@@ -21,6 +25,7 @@ article{
       }
     }
   }
+}
 
 .floating { 
   animation-name: floating;

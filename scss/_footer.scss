@@ -4,19 +4,20 @@ footer {
   align-items: center;
   align-content: space-between;
   color: $ColorPrimary;
+  height: 100vh;
   p {
     text-align: $CenterText;
     margin-top: 20px;
     margin-bottom: 10px;
   }
   a {
-    cursor: pointer;
-    transition: transform 0.5s ease;
-
-    &:hover {
-      transform: scale(1.3);
-    }
-    }
+      cursor: pointer;
+      transition: transform 0.5s ease;
+      &:hover {
+        transform: scale(1.3);
+      }
+      }
+  
   .div_footer {
     display: flex;
     justify-content: space-evenly;

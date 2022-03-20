@@ -10,12 +10,25 @@ nav {
         color: $ColorSecondary;
         border-bottom: 2px solid transparent;
         transition: 0.3s all ease;
-        &:hover{
-          color:$ColorPrimary;
+        &:hover {
+          color: $ColorPrimary;
           border-bottom: 2px solid $ColorPrimary;
           padding-bottom: 3px;
+        }
       }
     }
   }
- }
+}
+
+header {
+  nav {
+    a {
+      text-decoration: none;
+      color: $ColorTertiary;
+      transition: 0.2s all ease;
+      &:hover {
+        color: $ColorPrimary;
+      }
+    }
+  }
 }

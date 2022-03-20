@@ -65,3 +65,22 @@
     transition: 1s;
   }
 }
+@media (max-width: 420px) {
+
+  .article_skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-items: center;
+  }
+}
+
+
+@media (max-width: 690px) {
+
+}
+
+@media (max-width: 3840px) {
+
+} 
