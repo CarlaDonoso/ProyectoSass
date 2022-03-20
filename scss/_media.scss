@@ -1,0 +1,282 @@
+@media (min-width: 375px) and (max-width: 480px) {
+  .floating {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  div {
+    h3 {
+      color: $ColorPrimary;
+    }
+  }
+  body {
+    section {
+      p {
+        font-size: $TextoChi;
+        h5 {
+          color: $ColorPrimary;
+          font-size: $TextoChi;
+        }
+      }
+    }
+  }
+
+  .div_sobremi {
+    display: flex;
+    align-items: center;
+    .TextoAlternativo {
+      font-size: $TextoChi;
+      text-align: $CenterText;
+    }
+  }
+  a.Efecto_sobremi {
+    font-size: $TextoChi;
+  }
+  .TextosConEstilo {
+    font-size: $TextoChi;
+    text-align: $CenterText;
+  }
+
+  body {
+    section {
+      div {
+        .Proyecto {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          justify-items: center;
+          align-content: center;
+          text-align: center;
+        }
+        h5 {
+          font-size: $TextoChi;
+        }
+        p {
+          font-size: $TextoChi;
+        }
+      }
+    }
+  }
+
+  footer {
+    height: 100vh;
+    h5 {
+      display: none;
+    }
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .floating {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .div_sobremi {
+    display: flex;
+    align-items: center;
+    .TextoAlternativo {
+      font-size: $TextoMed;
+      text-align: $CenterText;
+    }
+  }
+
+  a.Efecto_sobremi {
+    font-size: $TextoGde;
+  }
+  .TextosConEstilo {
+    font-size: $TextoMed;
+    text-align: $CenterText;
+  }
+
+  body {
+    section {
+      div {
+        .Proyecto {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: auto;
+          gap: 20px;
+          justify-items: center;
+          align-content: center;
+          text-align: center;
+        }
+        h5 {
+          font-size: $TextoChi;
+        }
+        p {
+          font-size: $TextoChi;
+        }
+      }
+    }
+  }
+
+  footer {
+    height: 100vh;
+    h5 {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .floating {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  a.Efecto_sobremi {
+    font-size: $TextoGde;
+  }
+  .TextosConEstilo {
+    font-size: $TextoGde;
+    text-align: $CenterText;
+  }
+  .div_sobremi {
+    display: flex;
+    justify-content: space-around;
+    .TextoAlternativo {
+      font-size: $TextoGde;
+      text-align: $CenterText;
+    }
+  }
+
+  body {
+    section {
+      div {
+        .Proyecto {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: auto;
+          gap: 20px;
+          justify-items: center;
+          align-content: center;
+          text-align: center;
+        }
+        h5 {
+          font-size: $TextoMed;
+        }
+      }
+    }
+  }
+
+  footer {
+    height: 100vh;
+    h5 {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .floating {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  a.Efecto_sobremi {
+    font-size: $TextoGde;
+  }
+  .TextosConEstilo {
+    font-size: $TextoGde;
+    text-align: $CenterText;
+  }
+  .div_sobremi {
+    display: flex;
+    justify-content: space-around;
+    .TextoAlternativo {
+      font-size: $TextoGde;
+      text-align: $CenterText;
+    }
+  }
+
+  body {
+    section {
+      div {
+        .Proyecto {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: auto;
+          gap: 20px;
+          justify-items: center;
+          align-content: center;
+          text-align: center;
+        }
+        h5 {
+          font-size: $TextoGde;
+        }
+      }
+    }
+  }
+
+  footer {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 3840px) {
+  .floating {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  div {
+    h3 {
+      color: $ColorPrimary;
+    }
+  }
+  body {
+    section {
+      p {
+        font-size: $TextoGde;
+        h5 {
+          color: $ColorPrimary;
+          font-size: $TextoGde;
+        }
+      }
+    }
+  }
+
+  a.Efecto_sobremi {
+    font-size: $TextoGde;
+  }
+  .TextosConEstilo {
+    font-size: $TextoGde;
+    text-align: $CenterText;
+  }
+  .div_sobremi {
+    display: flex;
+    justify-content: space-around;
+    .TextoAlternativo {
+      font-size: $TextoGde;
+      text-align: $CenterText;
+    }
+  }
+  body {
+    section {
+      div {
+        .Proyecto {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: auto;
+          gap: 20px;
+          justify-items: center;
+          align-content: center;
+          text-align: center;
+        }
+        h5 {
+          font-size: $TextoGde;
+        }
+      }
+    }
+  }
+  footer {
+    height: 100vh;
+  }
+}

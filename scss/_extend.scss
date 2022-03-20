@@ -1,41 +1,41 @@
 .Progress {
-    width: 0px;
-    background-color: orange;
-    transition: width 1s;        
+  width: 0px;
+  background-color: orange;
+  transition: width 1s;
 }
 
 .ProgressUno {
-    @extend .Progress;
+  @extend .Progress;
 }
 
-.ProgressDos{
-    @extend .Progress;
+.ProgressDos {
+  @extend .Progress;
 }
 
-.ProgressTres{
-    @extend .Progress;
+.ProgressTres {
+  @extend .Progress;
 }
 
-.ProgressCuatro{
-@extend .Progress;
+.ProgressCuatro {
+  @extend .Progress;
 }
 
-.ProgressCinco{
-    @extend .Progress;
+.ProgressCinco {
+  @extend .Progress;
 }
 
-.Efecto{
-    text-decoration: none;
+.Efecto {
+  text-decoration: none;
   font-size: 15px;
   color: $ColorSecondary;
   border-bottom: 2px solid transparent;
   transition: 0.3s all ease;
 }
 
-.Efecto_sobremi{
-    @extend .Efecto;
+.Efecto_sobremi {
+  @extend .Efecto;
 }
 
-.Efecto_intereses{
-    @extend .Efecto
+.Efecto_intereses {
+  @extend .Efecto;
 }

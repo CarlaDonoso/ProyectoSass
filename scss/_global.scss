@@ -14,6 +14,7 @@ body {
     text-align: $CenterText;
     margin-top: $MT + 20px;
     margin-bottom: $MT + 20px;
+    color: $ColorPrimary;
   }
   p {
     text-align: $CenterText;
@@ -21,7 +22,6 @@ body {
     margin-bottom: $MT - 10px;
   }
 }
-
 .borde {
   border-radius: 30%;
 }
@@ -32,6 +32,7 @@ body {
 
 h5 {
   margin-top: $MT - 10px;
+  color: $ColorPrimary;
 }
 
 .section_home {
@@ -41,7 +42,6 @@ h5 {
   gap: 15px;
   justify-items: center;
   margin-top: 30px;
-  color: $ColorPrimary;
 }
 
 .borde {
@@ -52,41 +52,6 @@ h5 {
   animation-name: aparecer;
   animation-duration: 3.5s;
 }
-
-@media (max-width: 375px) {
-  .floating {
-    display: flex;
-    justify-items: center;
-  }
-  footer h5 {
-    display: none;
-  }
-
-}
-
-@media (max-width: 690px) {
-  ul {
-    text-align: center;
-  }
-  .floating {
-    display: flex;
-    justify-items: center;
-  }
-}
-
-@media (max-width: 3840px) {
-  ul {
-    text-align: center;
-  }
-  .floating {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-  }
-} 
-
-
 
 @keyframes aparecer {
   0% {

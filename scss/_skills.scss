@@ -1,17 +1,17 @@
 .div_skills {
   display: flex;
-    justify-content: center;
-    .article_skills{
-      display: grid;
+  justify-content: center;
+  .article_skills {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 20px;
     justify-items: center;
-      p{
-        border-radius: 50px;
-        margin-top: 10px;
-      }
+    p {
+      border-radius: 50px;
+      margin-top: 10px;
     }
+  }
   .skills img {
     cursor: pointer;
     transition: transform 0.5s ease;
@@ -21,66 +21,56 @@
   }
 }
 
-.Progress{
+.Progress {
   width: 50px;
-    background-color: orange;
-    transition: height 1s ease;
-    &:hover {
-      width: 50px;
-      transition: 1s;
-    }
-}
-
-.ProgressUno{
-  &:hover{
-    width: 100px;
-    transition: 1s;
-  }
-}
-
-.ProgressDos{
-  &:hover{
+  background-color: orange;
+  transition: height 1s ease;
+  &:hover {
     width: 50px;
     transition: 1s;
   }
 }
 
-.ProgressTres{
-  &:hover{
+.ProgressUno {
+  &:hover {
+    width: 100px;
+    transition: 1s;
+  }
+}
+
+.ProgressDos {
+  &:hover {
+    width: 50px;
+    transition: 1s;
+  }
+}
+
+.ProgressTres {
+  &:hover {
     width: 10px;
     transition: 1s;
   }
 }
 
-.ProgressCuatro{
-  &:hover{
+.ProgressCuatro {
+  &:hover {
     width: 25px;
     transition: 1s;
   }
 }
 
-.ProgressCinco{
-  &:hover{
+.ProgressCinco {
+  &:hover {
     width: 30px;
     transition: 1s;
   }
 }
 @media (max-width: 420px) {
-
   .article_skills {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     gap: 20px;
     justify-items: center;
   }
 }
-
-
-@media (max-width: 690px) {
-
-}
-
-@media (max-width: 3840px) {
-
-} 
