@@ -37,27 +37,35 @@
   text-align: center;
 }
 
-.div_skills {
+/*.div_skills {
   display: flex;
   justify-content: center;
-}
-.div_skills .article_skills {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  gap: 20px;
-  justify-items: center;
-}
-.div_skills .article_skills p {
-  border-radius: 50px;
-  margin-top: 10px;
-}
-.div_skills .skills img {
+  .article_skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-items: center;
+    p {
+      border-radius: 50px;
+      margin-top: 10px;
+    }
+  }
+
+}*/
+.skills img {
   cursor: pointer;
   transition: transform 0.5s ease;
+  margin-top: 20px;
 }
-.div_skills .skills img:hover {
+.skills img:hover {
   transform: scale(1.3);
+}
+
+p {
+  border-radius: 50px;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .Progress, .ProgressCinco, .ProgressCuatro, .ProgressTres, .ProgressDos, .ProgressUno {
@@ -95,15 +103,6 @@
   transition: 1s;
 }
 
-@media (max-width: 420px) {
-  .article_skills {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto;
-    gap: 20px;
-    justify-items: center;
-  }
-}
 .Proyecto {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -407,7 +406,7 @@ footer .div_footer {
   justify-items: center;
 }
 
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .floating {
     display: flex;
     justify-content: center;
@@ -420,11 +419,11 @@ footer .div_footer {
   }
 
   body section p {
-    font-size: small;
+    font-size: medium;
   }
   body section p h5 {
     color: orange;
-    font-size: small;
+    font-size: medium;
   }
 
   .div_sobremi {
@@ -432,16 +431,16 @@ footer .div_footer {
     align-items: center;
   }
   .div_sobremi .TextoAlternativo {
-    font-size: small;
+    font-size: medium;
     text-align: center;
   }
 
   a.Efecto_sobremi {
-    font-size: small;
+    font-size: medium;
   }
 
   .TextosConEstilo {
-    font-size: small;
+    font-size: medium;
     text-align: center;
   }
 
@@ -453,10 +452,10 @@ footer .div_footer {
     text-align: center;
   }
   body section div h5 {
-    font-size: small;
+    font-size: medium;
   }
   body section div p {
-    font-size: small;
+    font-size: medium;
   }
 
   footer {
@@ -484,7 +483,7 @@ footer .div_footer {
   }
 
   a.Efecto_sobremi {
-    font-size: xx-large;
+    font-size: medium;
   }
 
   .TextosConEstilo {
@@ -502,10 +501,10 @@ footer .div_footer {
     text-align: center;
   }
   body section div h5 {
-    font-size: small;
+    font-size: medium;
   }
   body section div p {
-    font-size: small;
+    font-size: medium;
   }
 
   footer {
@@ -523,12 +522,18 @@ footer .div_footer {
     width: 100%;
   }
 
+  body section p {
+    font-size: large h5;
+    font-size-color: orange;
+    font-size-font-size: large;
+  }
+
   a.Efecto_sobremi {
-    font-size: xx-large;
+    font-size: large;
   }
 
   .TextosConEstilo {
-    font-size: xx-large;
+    font-size: large;
     text-align: center;
   }
 
@@ -537,7 +542,7 @@ footer .div_footer {
     justify-content: space-around;
   }
   .div_sobremi .TextoAlternativo {
-    font-size: xx-large;
+    font-size: large;
     text-align: center;
   }
 
@@ -551,7 +556,10 @@ footer .div_footer {
     text-align: center;
   }
   body section div h5 {
-    font-size: medium;
+    font-size: large;
+  }
+  body section div p {
+    font-size: large;
   }
 
   footer {
@@ -568,13 +576,24 @@ footer .div_footer {
     text-align: center;
     width: 100%;
   }
+  .floating p {
+    font-size: large;
+  }
+
+  body section p {
+    font-size: large;
+  }
+  body section p h5 {
+    color: orange;
+    font-size: large;
+  }
 
   a.Efecto_sobremi {
-    font-size: xx-large;
+    font-size: large;
   }
 
   .TextosConEstilo {
-    font-size: xx-large;
+    font-size: large;
     text-align: center;
   }
 
@@ -583,7 +602,7 @@ footer .div_footer {
     justify-content: space-around;
   }
   .div_sobremi .TextoAlternativo {
-    font-size: xx-large;
+    font-size: large;
     text-align: center;
   }
 
@@ -597,7 +616,10 @@ footer .div_footer {
     text-align: center;
   }
   body section div h5 {
-    font-size: xx-large;
+    font-size: large;
+  }
+  body section div p {
+    font-size: large;
   }
 
   footer {
@@ -611,25 +633,28 @@ footer .div_footer {
     text-align: center;
     width: 100%;
   }
+  .floating p {
+    font-size: large;
+  }
 
   div h3 {
     color: orange;
   }
 
   body section p {
-    font-size: xx-large;
+    font-size: large;
   }
   body section p h5 {
     color: orange;
-    font-size: xx-large;
+    font-size: large;
   }
 
   a.Efecto_sobremi {
-    font-size: xx-large;
+    font-size: large;
   }
 
   .TextosConEstilo {
-    font-size: xx-large;
+    font-size: large;
     text-align: center;
   }
 
@@ -638,7 +663,7 @@ footer .div_footer {
     justify-content: space-around;
   }
   .div_sobremi .TextoAlternativo {
-    font-size: xx-large;
+    font-size: large;
     text-align: center;
   }
 
@@ -652,7 +677,7 @@ footer .div_footer {
     text-align: center;
   }
   body section div h5 {
-    font-size: xx-large;
+    font-size: large;
   }
 
   footer {

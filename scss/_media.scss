@@ -1,4 +1,4 @@
-@media (min-width: 375px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .floating {
     display: flex;
     justify-content: center;
@@ -13,10 +13,10 @@
   body {
     section {
       p {
-        font-size: $TextoChi;
+        font-size: $TextoMed;
         h5 {
           color: $ColorPrimary;
-          font-size: $TextoChi;
+          font-size: $TextoMed;
         }
       }
     }
@@ -26,15 +26,15 @@
     display: flex;
     align-items: center;
     .TextoAlternativo {
-      font-size: $TextoChi;
+      font-size: $TextoMed;
       text-align: $CenterText;
     }
   }
   a.Efecto_sobremi {
-    font-size: $TextoChi;
+    font-size: $TextoMed;
   }
   .TextosConEstilo {
-    font-size: $TextoChi;
+    font-size: $TextoMed;
     text-align: $CenterText;
   }
 
@@ -49,10 +49,10 @@
           text-align: center;
         }
         h5 {
-          font-size: $TextoChi;
+          font-size: $TextoMed;
         }
         p {
-          font-size: $TextoChi;
+          font-size: $TextoMed;
         }
       }
     }
@@ -83,7 +83,7 @@
   }
 
   a.Efecto_sobremi {
-    font-size: $TextoGde;
+    font-size: $TextoMed;
   }
   .TextosConEstilo {
     font-size: $TextoMed;
@@ -103,10 +103,10 @@
           text-align: center;
         }
         h5 {
-          font-size: $TextoChi;
+          font-size: $TextoMed;
         }
         p {
-          font-size: $TextoChi;
+          font-size: $TextoMed;
         }
       }
     }
@@ -126,6 +126,18 @@
     justify-content: center;
     text-align: center;
     width: 100%;
+  }
+
+  body {
+    section {
+      p {
+        font-size: $TextoGde
+        h5 {
+          color: $ColorPrimary;
+          font-size: $TextoGde;
+        }
+      }
+    }
   }
 
   a.Efecto_sobremi {
@@ -157,7 +169,10 @@
           text-align: center;
         }
         h5 {
-          font-size: $TextoMed;
+          font-size: $TextoGde;
+        }
+        p {
+          font-size: $TextoGde;
         }
       }
     }
@@ -177,6 +192,20 @@
     justify-content: center;
     text-align: center;
     width: 100%;
+    p{
+      font-size: $TextoGde;
+    }
+  }
+  body {
+    section {
+      p {
+        font-size: $TextoGde;
+        h5 {
+          color: $ColorPrimary;
+          font-size: $TextoGde;
+        }
+      }
+    }
   }
 
   a.Efecto_sobremi {
@@ -210,6 +239,9 @@
         h5 {
           font-size: $TextoGde;
         }
+        p {
+          font-size: $TextoGde;
+        }
       }
     }
   }
@@ -225,6 +257,9 @@
     justify-content: center;
     text-align: center;
     width: 100%;
+    p{
+      font-size: $TextoGde;
+    }
   }
   div {
     h3 {
